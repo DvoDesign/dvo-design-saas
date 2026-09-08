@@ -1,8 +1,8 @@
 const placeholders = [
-  { tag: "Фирменный стиль", rotate: "-rotate-2", tone: "bg-violet" },
-  { tag: "B2B-платформа", rotate: "rotate-1", tone: "bg-coral" },
-  { tag: "Лендинг", rotate: "-rotate-1", tone: "bg-yellow" },
-  { tag: "Продуктовый UI", rotate: "rotate-2", tone: "bg-ink" },
+  { tag: "Архитектура платформы", rotate: "-rotate-2", tone: "bg-violet" },
+  { tag: "B2B SaaS", rotate: "rotate-1", tone: "bg-coral" },
+  { tag: "Fullstack", rotate: "-rotate-1", tone: "bg-yellow" },
+  { tag: "UI-дизайн", rotate: "rotate-2", tone: "bg-ink" },
 ];
 
 export default function Work() {

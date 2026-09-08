@@ -4,20 +4,20 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-16 md:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="mb-6 text-sm font-medium text-ink-soft">
-            Студия дизайна · Валенсия и удалённо
+            Студия разработки · Валенсия и удалённо
           </p>
           <h1 className="font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight md:text-6xl">
-            Бренд, который{" "}
+            B2B SaaS,{" "}
             <span className="relative inline-block">
-              <span className="relative z-10">замечают</span>
+              <span className="relative z-10">спроектированный</span>
               <span className="absolute inset-x-0 bottom-1 -z-0 h-4 -rotate-1 bg-yellow/70 md:h-5" />
             </span>{" "}
-            раньше, чем дочитывают название.
+            выдержать рост, а не только запуск.
           </h1>
           <p className="mt-6 max-w-md text-lg text-ink-soft">
-            DvoDesign собирает фирменный стиль, сайт и интерфейс продукта в
-            одну систему — для B2B-компаний, которым нужно выглядеть так же
-            хорошо, как они работают.
+            DvoDesign проектирует архитектуру и собирает fullstack — от
+            модели данных и UI до продакшена — для B2B-платформ, которым
+            предстоит расти, а не оставаться пилотом.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
