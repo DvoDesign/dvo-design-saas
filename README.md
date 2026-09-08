@@ -1,33 +1,34 @@
-# DvoDesign — сайт студии (черновик)
+# DvoDesign — B2B SaaS studio site
 
-Next.js 16 + Tailwind CSS 4, TypeScript. Дизайн финальный по подходу, контент — плейсхолдер.
+Next.js 16 + Tailwind v4, animated with `@react-spring/web` and
+`spring-text-engine`, smooth-scrolled with Lenis. Originally based on the
+`next16-claude-starter` template (see `obsidian/` for the full convention
+vault) — content has been replaced with DvoDesign's own copy.
 
-## Запуск
+## Running locally
 
 ```
-npm install
-npm run dev
+yarn install
+yarn dev      # http://localhost:3000
 ```
 
-Открыть http://localhost:3000
+## What's still a placeholder
 
-## Что нужно заменить перед публикацией
+- `src/data/mocks/home.ts` — `STATS` (all zeros) and `PORTFOLIO_ITEMS`
+  ("Coming soon" case studies) are honest placeholders, not real numbers or
+  client names. Replace before publishing.
+- `PARTNERS` in the same file lists target verticals (SaaS, Fintech, …),
+  not real client logos — swap in real trusted-by logos once you have them.
+- `src/lib/site.ts` — `twitterHandle` is a placeholder handle.
 
-- `src/components/Contact.tsx` — реальная почта, город/контакты (помечено `TODO`)
-- `src/components/Pricing.tsx` — реальные цены и сроки (помечено `TODO`)
-- `src/components/Work.tsx` — реальные кейсы вместо плейсхолдеров «Скоро»
-- `src/components/Testimonials.tsx` — реальные отзывы клиентов, когда появятся
+## Documentation
 
-## Шрифты
+Conventions, architecture notes, and the animation system are documented in
+the `obsidian/` vault — open it in [Obsidian](https://obsidian.md) or start
+at `obsidian/README.md`. `AGENTS.md` / `CLAUDE.md` / `.cursorrules` point AI
+coding agents at the same vault before they edit anything.
 
-Bricolage Grotesque и Public Sans подключены через `<link>` на Google Fonts в
-`src/app/layout.tsx` (а не через `next/font/google`) — так надёжнее без
-предположений о доступе к сети на этапе сборки. Если хотите самохостинг
-шрифтов и оптимизацию через `next/font`, верните `Bricolage_Grotesque` и
-`Public_Sans` из `next/font/google` в `layout.tsx` и уберите `<link>`-теги.
+## Deploy
 
-## Структура
-
-- `src/app/layout.tsx` — шрифты, метаданные
-- `src/app/globals.css` — цветовые токены (фиолетовый/коралловый/жёлтый) и типографика
-- `src/components/` — Header, Hero, Services, Work, Process, Testimonials, Pricing, Faq, Contact, Footer
+Connected to Vercel — pushes to `main` deploy automatically. No `vercel.json`
+required; the Next.js preset handles build/output.
